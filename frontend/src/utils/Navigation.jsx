@@ -39,7 +39,7 @@ function Navigation() {
               History
             </Link>
           ) : (
-            <Link className="link" type="button" to={`/${roomId}`} onClick={() => handleGuestUser()}>
+            <Link className="link" type="button" to={`/${roomId}`}>
               Join as Guest
             </Link>
           )}
