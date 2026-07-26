@@ -78,8 +78,8 @@ export const AuthProvider = ({children}) => {
     }
 
     const handleLogout = async () => {
-        await client.post("/logout");
         localStorage.removeItem("token");
+        await client.post("/logout");
         navigate("/auth");
     };
 
