@@ -46,6 +46,8 @@ function Navigation() {
           {localStorage.token ? (
             <Link
               className="link"
+              type="button"
+              onClick={async () => await handleLogout()}
             >
               Logout
             </Link>

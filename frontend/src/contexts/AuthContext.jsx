@@ -78,7 +78,9 @@ export const AuthProvider = ({children}) => {
     }
 
     const handleLogout = async () => {
+        console.log(localStorage.getItem("token"));
         localStorage.removeItem("token");
+        console.log(localStorage.getItem("token"));
         await client.post("/logout");
         navigate("/auth");
     };
