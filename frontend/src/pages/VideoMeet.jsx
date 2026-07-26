@@ -25,7 +25,7 @@ import SendIcon from "@mui/icons-material/Send";
 
 var connections = {};
 
-const server_url = import.meta.env.API_URL || "http://localhost:8080";
+const server_url = import.meta.env.VITE_API_URL || "http://localhost:8080";
 
 const peerConfigConnections = {
   iceServers: [{ urls: "stun:stun.l.google.com:19302" }],
