@@ -19,9 +19,6 @@ function Navigation() {
 
   const roomId = nanoid();
 
-  const handleGuestUser = async () =>{
-    roomId = nanoid();
-  }
 
   return (
     <div className="NavigationContainer">
@@ -49,8 +46,6 @@ function Navigation() {
           {localStorage.token ? (
             <Link
               className="link"
-              type="button"
-              onClick={async () => await handleLogout()}
             >
               Logout
             </Link>
@@ -80,9 +75,7 @@ function Navigation() {
           ) : (
             <NavLink
               className="link"
-              type="button"
               to={`/${roomId}`}
-              onClick={() => handleGuestUser()}
               style={({ isActive }) => ({
                 color: isActive ? "greenyellow" : "white",
               })}
