@@ -12,8 +12,6 @@ const app = express();
 const server = createServer(app);
 const io = connectSocket(server);
 
-dotenv.config();
-
 await connectDB();
 
 app.use(cookieParser());
