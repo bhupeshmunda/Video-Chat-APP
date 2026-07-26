@@ -1,0 +1,11 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  line-height: 30px;
+}
+
+body{
+  background-color: rgb(0, 0, 0);
+  color: white;
+}

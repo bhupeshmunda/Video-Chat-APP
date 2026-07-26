@@ -1,0 +1,32 @@
+.meetContainer{
+    margin-left: 1vw;
+    height: 90vh;
+    width: 100vw;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: auto auto;
+}
+
+.leftPanel{
+    height: 50vh;
+    padding: 50px;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.rightPanel img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 1000px) {
+    .meetContainer{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: auto;
+    }
+}

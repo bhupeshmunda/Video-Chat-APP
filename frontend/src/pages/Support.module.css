@@ -1,0 +1,93 @@
+.page {
+  min-height: 100vh;
+  background: radial-gradient(circle at top right, #211329 0, #000 45%);
+}
+
+.homeButton {
+  margin: 20px 28px !important;
+  color: #fff !important;
+  background: #171717 !important;
+}
+
+.supportContainer {
+  width: min(1050px, calc(100% - 48px));
+  min-height: calc(100vh - 90px);
+  margin: 0 auto;
+  padding: 24px 0 70px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  align-content: center;
+}
+
+.hero {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.eyebrow {
+  color: #ff5c78;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.title {
+  margin: 8px 0 !important;
+  font-weight: 700 !important;
+}
+
+.subtitle {
+  max-width: 560px;
+  margin: 0 auto !important;
+  color: #bdbdbd;
+  font-size: 1.05rem !important;
+}
+
+.card {
+  min-height: 230px;
+  border: 1px solid #2d2d2d !important;
+  transition: transform 180ms ease, border-color 180ms ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: #ff2d55 !important;
+}
+
+.card :global(.MuiCardContent-root) {
+  height: 100%;
+  padding: 30px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.cardText {
+  flex: 1;
+  margin: 14px 0 24px !important;
+  color: #bdbdbd;
+}
+
+.tipList {
+  margin: 18px 0 0;
+  padding-left: 22px;
+  color: #bdbdbd;
+}
+
+.tipList li {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 700px) {
+  .supportContainer {
+    width: min(100% - 28px, 520px);
+    grid-template-columns: 1fr;
+    padding-top: 10px;
+  }
+
+  .title {
+    font-size: 2.2rem !important;
+  }
+}

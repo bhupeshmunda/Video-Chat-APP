@@ -1,0 +1,154 @@
+.lobbyContainer {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.videoSection,
+.lobbyForm {
+  width: 50%;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.videoSection {
+  display: flex;
+  justify-content: center;
+}
+
+.videoSection video {
+  width: 90vw;
+  max-width: 600px;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border: 3px solid #60a5fa;
+  border-radius: 16px;
+  background: black;
+}
+
+.lobbyForm {
+  padding-left: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.lobbyForm h2 {
+  font-size: 32px;
+}
+
+.usernameInput {
+  width: 320px;
+  background: white;
+  border-radius: 6px;
+}
+
+.lobbyForm button {
+  width: 320px;
+  height: 48px;
+  text-transform: none;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .lobbyContainer {
+    flex-direction: column;
+  }
+
+  .videoSection,
+  .lobbyForm {
+    width: 100vw;
+  }
+
+  .lobbyForm {
+    align-items: center;
+  }
+}
+
+.meetVideoContainer {
+  position: relative;
+  height: 90vh;
+}
+
+.meetUserVideo {
+  position: absolute;
+  bottom: 10vh;
+  left: 5vh;
+  height: 30vh;
+  border-radius: 7%;
+}
+
+.buttonContainer {
+  border-top: solid white 0.5px;
+  padding-top: 1rem;
+  position: absolute;
+  bottom: 0;
+  height: 8vh;
+  width: 100vw;
+  text-align: center;
+  align-content: center;
+}
+.buttonContainer svg {
+  font-size: 2.5rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.Video {
+  margin: 10px;
+}
+
+.conferenceView {
+  display: flex;
+  height: 80vh;
+  padding: 2rem;
+  gap: 10px;
+}
+
+.conferenceView > div > video {
+  padding: 1rem;
+  width: 30vw;
+  min-width: 25vw;
+  border-radius: 10%;
+}
+
+.chatContainer {
+  position: absolute;
+  background-color: #2c2c2c;
+  right: 0;
+  height: 82vh;
+  width: 25vw;
+}
+
+.chatField {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
+  padding-right: auto;
+  align-items: center;
+  justify-content: space-around;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.msg {
+  display: inline-block;
+  font-style: italic;
+  font-weight: lighter;
+  margin-left: 15px;
+}
+
+.user {
+  color: rgb(255, 45, 80);
+  display: inline-block;
+  font-weight: bolder;
+  font-size: 13px;
+}
+
+.userMsg {
+  display: flex;
+  padding: 15px;
+}

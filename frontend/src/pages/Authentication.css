@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+input{
+  background:  rgb(0, 0, 0);
+}
+
+.auth-container {
+  display: flex;
+  height: 80vh;
+  width: 100%;
+}
+
+.left-side {
+  margin: 3rem;
+  flex: 1.4;
+  background-image: url("/frontend/assets/auth.avif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.right-side {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:  rgb(0, 0, 0);
+}
+
+.auth-box {
+  width: 370px;
+  background:  rgb(0, 0, 0);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,.15);
+}
+
+.auth-box h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.toggle-buttons {
+  display: flex;
+  margin-bottom: 25px;
+  border: 1px,solid,#1976d2;;
+}
+
+.toggle-buttons button {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+  background:  rgb(0, 0, 0);
+  font-size: 15px;
+  transition: .3s;
+}
+
+.toggle-buttons button.active {
+  background: #1976d2;
+  color: white;
+}
+
+.auth-box input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  outline: none;
+  font-size: 15px;
+}
+
+.auth-box input:focus {
+  border-color: #1976d2;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: #1976d2;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: .3s;
+}
+
+.submit-btn:hover {
+  background: #1359a6;
+}
+
+.error {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.success {
+  color: green;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .left-side {
+    display: none;
+  }
+
+  .right-side {
+    flex: 1;
+  }
+
+  .auth-box {
+    width: 90%;
+  }
+}
